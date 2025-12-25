@@ -9,6 +9,7 @@ import '../models/rack.dart';
 import '../models/book.dart';
 import '../models/user.dart';
 import '../models/favorite.dart';
+import '../models/loan.dart';
 
 class DatabaseHelper {
   static final DatabaseHelper instance = DatabaseHelper._init();
@@ -145,7 +146,7 @@ class DatabaseHelper {
         totalCopies: 2,
         availableCopies: 1,
         onHandCopies: 1,
-        coverImagePath: 'assets/images/book_placeholder.png',
+        coverImagePath: 'assets/images/algebra.jpg',
       ),
       Book(
         id: 2,
@@ -157,7 +158,7 @@ class DatabaseHelper {
         totalCopies: 3,
         availableCopies: 2,
         onHandCopies: 1,
-        coverImagePath: 'assets/images/book_placeholder.png',
+        coverImagePath: 'assets/images/geometry.jpg',
       ),
       Book(
         id: 3,
@@ -169,6 +170,7 @@ class DatabaseHelper {
         totalCopies: 5,
         availableCopies: 4,
         onHandCopies: 1,
+        coverImagePath: 'assets/images/histkz.jpg',
       ),
       Book(
         id: 4,
@@ -180,6 +182,7 @@ class DatabaseHelper {
         totalCopies: 4,
         availableCopies: 3,
         onHandCopies: 1,
+        coverImagePath: 'assets/images/vshist.jpg',
       ),
       Book(
         id: 5,
@@ -191,6 +194,7 @@ class DatabaseHelper {
         totalCopies: 3,
         availableCopies: 2,
         onHandCopies: 1,
+        coverImagePath: 'assets/images/fisic.jpg',
       ),
       Book(
         id: 6,
@@ -202,6 +206,7 @@ class DatabaseHelper {
         totalCopies: 4,
         availableCopies: 3,
         onHandCopies: 1,
+        coverImagePath: 'assets/images/himiya.jpg',
       ),
       Book(
         id: 7,
@@ -213,6 +218,7 @@ class DatabaseHelper {
         totalCopies: 3,
         availableCopies: 2,
         onHandCopies: 1,
+        coverImagePath: 'assets/images/bilolgy.jpg',
       ),
       Book(
         id: 8,
@@ -224,6 +230,7 @@ class DatabaseHelper {
         totalCopies: 5,
         availableCopies: 4,
         onHandCopies: 1,
+        coverImagePath: 'assets/images/geography.jpg',
       ),
       Book(
         id: 9,
@@ -235,6 +242,7 @@ class DatabaseHelper {
         totalCopies: 6,
         availableCopies: 5,
         onHandCopies: 1,
+        coverImagePath: 'assets/images/kazakh.jpg',
       ),
       Book(
         id: 10,
@@ -246,6 +254,7 @@ class DatabaseHelper {
         totalCopies: 5,
         availableCopies: 4,
         onHandCopies: 1,
+        coverImagePath: 'assets/images/russ.jpg',
       ),
       Book(
         id: 11,
@@ -257,6 +266,7 @@ class DatabaseHelper {
         totalCopies: 4,
         availableCopies: 3,
         onHandCopies: 1,
+        coverImagePath: 'assets/images/english.jpg',
       ),
       Book(
         id: 12,
@@ -268,6 +278,7 @@ class DatabaseHelper {
         totalCopies: 3,
         availableCopies: 2,
         onHandCopies: 1,
+        coverImagePath: 'assets/images/inform.jpg',
       ),
       Book(
         id: 13,
@@ -314,7 +325,7 @@ class DatabaseHelper {
         totalCopies: 5,
         availableCopies: 4,
         onHandCopies: 1,
-        coverImagePath: 'assets/images/book_placeholder.png/200x300/8B4513/FFFFFF?text=Абай+жолы',
+        coverImagePath: 'assets/images/histkz.jpg',
       ),
       Book(
         id: 17,
@@ -327,7 +338,7 @@ class DatabaseHelper {
         totalCopies: 4,
         availableCopies: 3,
         onHandCopies: 1,
-        coverImagePath: 'assets/images/book_placeholder.png/200x300/8B4513/FFFFFF?text=Путь+Абая',
+        coverImagePath: 'assets/images/histkz.jpg',
       ),
       Book(
         id: 18,
@@ -362,7 +373,7 @@ class DatabaseHelper {
         totalCopies: 5,
         availableCopies: 4,
         onHandCopies: 1,
-        coverImagePath: 'assets/images/book_placeholder.png/200x300/9B59B6/FFFFFF?text=Мастер',
+        coverImagePath: 'assets/images/russ.jpg',
       ),
       Book(
         id: 21,
@@ -375,7 +386,7 @@ class DatabaseHelper {
         totalCopies: 6,
         availableCopies: 5,
         onHandCopies: 1,
-        coverImagePath: 'assets/images/book_placeholder.png/200x300/E74C3C/FFFFFF?text=Онегин',
+        coverImagePath: 'assets/images/russ.jpg',
       ),
       Book(
         id: 22,
@@ -388,7 +399,7 @@ class DatabaseHelper {
         totalCopies: 7,
         availableCopies: 6,
         onHandCopies: 1,
-        coverImagePath: 'assets/images/book_placeholder.png/200x300/F39C12/FFFFFF?text=Гарри+Поттер',
+        coverImagePath: null, // F39C12/FFFFFF?text=Гарри+Поттер',
       ),
       Book(
         id: 23,
@@ -401,7 +412,7 @@ class DatabaseHelper {
         totalCopies: 4,
         availableCopies: 3,
         onHandCopies: 1,
-        coverImagePath: 'assets/images/book_placeholder.png/200x300/16A085/FFFFFF?text=Властелин',
+        coverImagePath: null, // 16A085/FFFFFF?text=Властелин',
       ),
       Book(
         id: 24,
@@ -414,7 +425,7 @@ class DatabaseHelper {
         totalCopies: 5,
         availableCopies: 4,
         onHandCopies: 1,
-        coverImagePath: 'assets/images/book_placeholder.png/200x300/2C3E50/FFFFFF?text=1984',
+        coverImagePath: null, // 2C3E50/FFFFFF?text=1984',
       ),
       Book(
         id: 25,
@@ -427,7 +438,7 @@ class DatabaseHelper {
         totalCopies: 4,
         availableCopies: 3,
         onHandCopies: 1,
-        coverImagePath: 'assets/images/book_placeholder.png/200x300/34495E/FFFFFF?text=Скотный+двор',
+        coverImagePath: null, // 34495E/FFFFFF?text=Скотный+двор',
       ),
       Book(
         id: 26,
@@ -440,7 +451,7 @@ class DatabaseHelper {
         totalCopies: 4,
         availableCopies: 3,
         onHandCopies: 1,
-        coverImagePath: 'assets/images/book_placeholder.png/200x300/E67E22/FFFFFF?text=Анна+Каренина',
+        coverImagePath: null, // E67E22/FFFFFF?text=Анна+Каренина',
       ),
       Book(
         id: 27,
@@ -453,7 +464,7 @@ class DatabaseHelper {
         totalCopies: 5,
         availableCopies: 4,
         onHandCopies: 1,
-        coverImagePath: 'assets/images/book_placeholder.png/200x300/D35400/FFFFFF?text=Отцы+и+дети',
+        coverImagePath: null, // D35400/FFFFFF?text=Отцы+и+дети',
       ),
       Book(
         id: 28,
@@ -466,7 +477,7 @@ class DatabaseHelper {
         totalCopies: 4,
         availableCopies: 3,
         onHandCopies: 1,
-        coverImagePath: 'assets/images/book_placeholder.png/200x300/8E44AD/FFFFFF?text=Герой',
+        coverImagePath: null, // 8E44AD/FFFFFF?text=Герой',
       ),
       Book(
         id: 29,
@@ -479,7 +490,7 @@ class DatabaseHelper {
         totalCopies: 5,
         availableCopies: 4,
         onHandCopies: 1,
-        coverImagePath: 'assets/images/book_placeholder.png/200x300/27AE60/FFFFFF?text=Мёртвые+души',
+        coverImagePath: null, // 27AE60/FFFFFF?text=Мёртвые+души',
       ),
       Book(
         id: 30,
@@ -492,7 +503,7 @@ class DatabaseHelper {
         totalCopies: 6,
         availableCopies: 5,
         onHandCopies: 1,
-        coverImagePath: 'assets/images/book_placeholder.png/200x300/F1C40F/000000?text=Алиса',
+        coverImagePath: null, // F1C40F/000000?text=Алиса',
       ),
       Book(
         id: 31,
@@ -505,7 +516,7 @@ class DatabaseHelper {
         totalCopies: 8,
         availableCopies: 7,
         onHandCopies: 1,
-        coverImagePath: 'assets/images/book_placeholder.png/200x300/1ABC9C/FFFFFF?text=Маленький+принц',
+        coverImagePath: null, // 1ABC9C/FFFFFF?text=Маленький+принц',
       ),
       Book(
         id: 32,
@@ -518,7 +529,7 @@ class DatabaseHelper {
         totalCopies: 5,
         availableCopies: 4,
         onHandCopies: 1,
-        coverImagePath: 'assets/images/book_placeholder.png/200x300/E74C3C/FFFFFF?text=Мушкетёры',
+        coverImagePath: null, // E74C3C/FFFFFF?text=Мушкетёры',
       ),
       Book(
         id: 33,
@@ -531,7 +542,7 @@ class DatabaseHelper {
         totalCopies: 4,
         availableCopies: 3,
         onHandCopies: 1,
-        coverImagePath: 'assets/images/book_placeholder.png/200x300/C0392B/FFFFFF?text=Монте-Кристо',
+        coverImagePath: null, // C0392B/FFFFFF?text=Монте-Кристо',
       ),
       Book(
         id: 34,
@@ -544,7 +555,7 @@ class DatabaseHelper {
         totalCopies: 6,
         availableCopies: 5,
         onHandCopies: 1,
-        coverImagePath: 'assets/images/book_placeholder.png/200x300/7F8C8D/FFFFFF?text=Шерлок+Холмс',
+        coverImagePath: null, // 7F8C8D/FFFFFF?text=Шерлок+Холмс',
       ),
       Book(
         id: 35,
@@ -557,7 +568,7 @@ class DatabaseHelper {
         totalCopies: 4,
         availableCopies: 3,
         onHandCopies: 1,
-        coverImagePath: 'assets/images/book_placeholder.png/200x300/95A5A6/FFFFFF?text=Дон+Кихот',
+        coverImagePath: null, // 95A5A6/FFFFFF?text=Дон+Кихот',
       ),
       // Дополнительные книги для заполнения стеллажей до 10 книг на каждом
       // DA A - добавляем 4 книги (уже есть 6)
@@ -571,7 +582,7 @@ class DatabaseHelper {
         totalCopies: 3,
         availableCopies: 2,
         onHandCopies: 1,
-        coverImagePath: 'assets/images/book_placeholder.png',
+        coverImagePath: null,
       ),
       Book(
         id: 37,
@@ -583,7 +594,7 @@ class DatabaseHelper {
         totalCopies: 3,
         availableCopies: 2,
         onHandCopies: 1,
-        coverImagePath: 'assets/images/book_placeholder.png',
+        coverImagePath: null,
       ),
       Book(
         id: 38,
@@ -595,7 +606,7 @@ class DatabaseHelper {
         totalCopies: 4,
         availableCopies: 3,
         onHandCopies: 1,
-        coverImagePath: 'assets/images/book_placeholder.png',
+        coverImagePath: null,
       ),
       Book(
         id: 39,
@@ -608,7 +619,7 @@ class DatabaseHelper {
         totalCopies: 4,
         availableCopies: 3,
         onHandCopies: 1,
-        coverImagePath: 'assets/images/book_placeholder.png',
+        coverImagePath: null,
       ),
       // DA B - добавляем 6 книг (уже есть 4)
       Book(
@@ -621,7 +632,7 @@ class DatabaseHelper {
         totalCopies: 5,
         availableCopies: 4,
         onHandCopies: 1,
-        coverImagePath: 'assets/images/book_placeholder.png',
+        coverImagePath: null,
       ),
       Book(
         id: 41,
@@ -633,7 +644,7 @@ class DatabaseHelper {
         totalCopies: 4,
         availableCopies: 3,
         onHandCopies: 1,
-        coverImagePath: 'assets/images/book_placeholder.png',
+        coverImagePath: null,
       ),
       Book(
         id: 42,
@@ -645,7 +656,7 @@ class DatabaseHelper {
         totalCopies: 4,
         availableCopies: 3,
         onHandCopies: 1,
-        coverImagePath: 'assets/images/book_placeholder.png',
+        coverImagePath: null,
       ),
       Book(
         id: 43,
@@ -658,7 +669,7 @@ class DatabaseHelper {
         totalCopies: 5,
         availableCopies: 4,
         onHandCopies: 1,
-        coverImagePath: 'assets/images/book_placeholder.png',
+        coverImagePath: null,
       ),
       Book(
         id: 44,
@@ -671,7 +682,7 @@ class DatabaseHelper {
         totalCopies: 4,
         availableCopies: 3,
         onHandCopies: 1,
-        coverImagePath: 'assets/images/book_placeholder.png',
+        coverImagePath: null,
       ),
       Book(
         id: 45,
@@ -684,7 +695,7 @@ class DatabaseHelper {
         totalCopies: 6,
         availableCopies: 5,
         onHandCopies: 1,
-        coverImagePath: 'assets/images/book_placeholder.png',
+        coverImagePath: null,
       ),
       // DA C - добавляем 6 книг (уже есть 4)
       Book(
@@ -697,7 +708,7 @@ class DatabaseHelper {
         totalCopies: 4,
         availableCopies: 3,
         onHandCopies: 1,
-        coverImagePath: 'assets/images/book_placeholder.png',
+        coverImagePath: null,
       ),
       Book(
         id: 47,
@@ -709,7 +720,7 @@ class DatabaseHelper {
         totalCopies: 4,
         availableCopies: 3,
         onHandCopies: 1,
-        coverImagePath: 'assets/images/book_placeholder.png',
+        coverImagePath: null,
       ),
       Book(
         id: 48,
@@ -721,7 +732,7 @@ class DatabaseHelper {
         totalCopies: 4,
         availableCopies: 3,
         onHandCopies: 1,
-        coverImagePath: 'assets/images/book_placeholder.png',
+        coverImagePath: null,
       ),
       Book(
         id: 49,
@@ -733,7 +744,7 @@ class DatabaseHelper {
         totalCopies: 4,
         availableCopies: 3,
         onHandCopies: 1,
-        coverImagePath: 'assets/images/book_placeholder.png',
+        coverImagePath: null,
       ),
       Book(
         id: 50,
@@ -746,7 +757,7 @@ class DatabaseHelper {
         totalCopies: 6,
         availableCopies: 5,
         onHandCopies: 1,
-        coverImagePath: 'assets/images/book_placeholder.png',
+        coverImagePath: null,
       ),
       Book(
         id: 51,
@@ -759,7 +770,7 @@ class DatabaseHelper {
         totalCopies: 5,
         availableCopies: 4,
         onHandCopies: 1,
-        coverImagePath: 'assets/images/book_placeholder.png',
+        coverImagePath: null,
       ),
       // DA D - добавляем 6 книг (уже есть 4)
       Book(
@@ -772,7 +783,7 @@ class DatabaseHelper {
         totalCopies: 4,
         availableCopies: 3,
         onHandCopies: 1,
-        coverImagePath: 'assets/images/book_placeholder.png',
+        coverImagePath: null,
       ),
       Book(
         id: 53,
@@ -784,7 +795,7 @@ class DatabaseHelper {
         totalCopies: 4,
         availableCopies: 3,
         onHandCopies: 1,
-        coverImagePath: 'assets/images/book_placeholder.png',
+        coverImagePath: null,
       ),
       Book(
         id: 54,
@@ -796,7 +807,7 @@ class DatabaseHelper {
         totalCopies: 5,
         availableCopies: 4,
         onHandCopies: 1,
-        coverImagePath: 'assets/images/book_placeholder.png',
+        coverImagePath: null,
       ),
       Book(
         id: 55,
@@ -808,7 +819,7 @@ class DatabaseHelper {
         totalCopies: 4,
         availableCopies: 3,
         onHandCopies: 1,
-        coverImagePath: 'assets/images/book_placeholder.png',
+        coverImagePath: null,
       ),
       Book(
         id: 56,
@@ -821,7 +832,7 @@ class DatabaseHelper {
         totalCopies: 5,
         availableCopies: 4,
         onHandCopies: 1,
-        coverImagePath: 'assets/images/book_placeholder.png',
+        coverImagePath: null,
       ),
       Book(
         id: 57,
@@ -834,7 +845,7 @@ class DatabaseHelper {
         totalCopies: 3,
         availableCopies: 2,
         onHandCopies: 1,
-        coverImagePath: 'assets/images/book_placeholder.png',
+        coverImagePath: null,
       ),
       // DA E - добавляем 6 книг (уже есть 4)
       Book(
@@ -847,7 +858,7 @@ class DatabaseHelper {
         totalCopies: 5,
         availableCopies: 4,
         onHandCopies: 1,
-        coverImagePath: 'assets/images/book_placeholder.png',
+        coverImagePath: null,
       ),
       Book(
         id: 59,
@@ -859,7 +870,7 @@ class DatabaseHelper {
         totalCopies: 5,
         availableCopies: 4,
         onHandCopies: 1,
-        coverImagePath: 'assets/images/book_placeholder.png',
+        coverImagePath: null,
       ),
       Book(
         id: 60,
@@ -871,7 +882,7 @@ class DatabaseHelper {
         totalCopies: 4,
         availableCopies: 3,
         onHandCopies: 1,
-        coverImagePath: 'assets/images/book_placeholder.png',
+        coverImagePath: null,
       ),
       Book(
         id: 61,
@@ -883,7 +894,7 @@ class DatabaseHelper {
         totalCopies: 3,
         availableCopies: 2,
         onHandCopies: 1,
-        coverImagePath: 'assets/images/book_placeholder.png',
+        coverImagePath: null,
       ),
       Book(
         id: 62,
@@ -895,7 +906,7 @@ class DatabaseHelper {
         totalCopies: 3,
         availableCopies: 2,
         onHandCopies: 1,
-        coverImagePath: 'assets/images/book_placeholder.png',
+        coverImagePath: null,
       ),
       Book(
         id: 63,
@@ -908,7 +919,7 @@ class DatabaseHelper {
         totalCopies: 5,
         availableCopies: 4,
         onHandCopies: 1,
-        coverImagePath: 'assets/images/book_placeholder.png',
+        coverImagePath: null,
       ),
       // DA F - добавляем 6 книг (уже есть 4)
       Book(
@@ -921,7 +932,7 @@ class DatabaseHelper {
         totalCopies: 4,
         availableCopies: 3,
         onHandCopies: 1,
-        coverImagePath: 'assets/images/book_placeholder.png',
+        coverImagePath: null,
       ),
       Book(
         id: 65,
@@ -933,7 +944,7 @@ class DatabaseHelper {
         totalCopies: 4,
         availableCopies: 3,
         onHandCopies: 1,
-        coverImagePath: 'assets/images/book_placeholder.png',
+        coverImagePath: null,
       ),
       Book(
         id: 66,
@@ -945,7 +956,7 @@ class DatabaseHelper {
         totalCopies: 5,
         availableCopies: 4,
         onHandCopies: 1,
-        coverImagePath: 'assets/images/book_placeholder.png',
+        coverImagePath: null,
       ),
       Book(
         id: 67,
@@ -957,7 +968,7 @@ class DatabaseHelper {
         totalCopies: 4,
         availableCopies: 3,
         onHandCopies: 1,
-        coverImagePath: 'assets/images/book_placeholder.png',
+        coverImagePath: null,
       ),
       Book(
         id: 68,
@@ -970,7 +981,7 @@ class DatabaseHelper {
         totalCopies: 6,
         availableCopies: 5,
         onHandCopies: 1,
-        coverImagePath: 'assets/images/book_placeholder.png',
+        coverImagePath: null,
       ),
       Book(
         id: 69,
@@ -983,7 +994,7 @@ class DatabaseHelper {
         totalCopies: 5,
         availableCopies: 4,
         onHandCopies: 1,
-        coverImagePath: 'assets/images/book_placeholder.png',
+        coverImagePath: null,
       ),
       // TB A - добавляем 8 книг (уже есть 2)
       Book(
@@ -996,7 +1007,7 @@ class DatabaseHelper {
         totalCopies: 5,
         availableCopies: 4,
         onHandCopies: 1,
-        coverImagePath: 'assets/images/book_placeholder.png',
+        coverImagePath: null,
       ),
       Book(
         id: 71,
@@ -1008,7 +1019,7 @@ class DatabaseHelper {
         totalCopies: 5,
         availableCopies: 4,
         onHandCopies: 1,
-        coverImagePath: 'assets/images/book_placeholder.png',
+        coverImagePath: null,
       ),
       Book(
         id: 72,
@@ -1020,7 +1031,7 @@ class DatabaseHelper {
         totalCopies: 6,
         availableCopies: 5,
         onHandCopies: 1,
-        coverImagePath: 'assets/images/book_placeholder.png',
+        coverImagePath: null,
       ),
       Book(
         id: 73,
@@ -1032,7 +1043,7 @@ class DatabaseHelper {
         totalCopies: 5,
         availableCopies: 4,
         onHandCopies: 1,
-        coverImagePath: 'assets/images/book_placeholder.png',
+        coverImagePath: null,
       ),
       Book(
         id: 74,
@@ -1045,7 +1056,7 @@ class DatabaseHelper {
         totalCopies: 4,
         availableCopies: 3,
         onHandCopies: 1,
-        coverImagePath: 'assets/images/book_placeholder.png',
+        coverImagePath: null,
       ),
       Book(
         id: 75,
@@ -1058,7 +1069,7 @@ class DatabaseHelper {
         totalCopies: 5,
         availableCopies: 4,
         onHandCopies: 1,
-        coverImagePath: 'assets/images/book_placeholder.png',
+        coverImagePath: null,
       ),
       Book(
         id: 76,
@@ -1071,7 +1082,7 @@ class DatabaseHelper {
         totalCopies: 6,
         availableCopies: 5,
         onHandCopies: 1,
-        coverImagePath: 'assets/images/book_placeholder.png',
+        coverImagePath: null,
       ),
       Book(
         id: 77,
@@ -1084,7 +1095,7 @@ class DatabaseHelper {
         totalCopies: 5,
         availableCopies: 4,
         onHandCopies: 1,
-        coverImagePath: 'assets/images/book_placeholder.png',
+        coverImagePath: null,
       ),
       // TB B - добавляем 9 книг (уже есть 1)
       Book(
@@ -1097,7 +1108,7 @@ class DatabaseHelper {
         totalCopies: 4,
         availableCopies: 3,
         onHandCopies: 1,
-        coverImagePath: 'assets/images/book_placeholder.png',
+        coverImagePath: null,
       ),
       Book(
         id: 79,
@@ -1109,7 +1120,7 @@ class DatabaseHelper {
         totalCopies: 4,
         availableCopies: 3,
         onHandCopies: 1,
-        coverImagePath: 'assets/images/book_placeholder.png',
+        coverImagePath: null,
       ),
       Book(
         id: 80,
@@ -1121,7 +1132,7 @@ class DatabaseHelper {
         totalCopies: 3,
         availableCopies: 2,
         onHandCopies: 1,
-        coverImagePath: 'assets/images/book_placeholder.png',
+        coverImagePath: null,
       ),
       Book(
         id: 81,
@@ -1133,7 +1144,7 @@ class DatabaseHelper {
         totalCopies: 4,
         availableCopies: 3,
         onHandCopies: 1,
-        coverImagePath: 'assets/images/book_placeholder.png',
+        coverImagePath: null,
       ),
       Book(
         id: 82,
@@ -1145,7 +1156,7 @@ class DatabaseHelper {
         totalCopies: 3,
         availableCopies: 2,
         onHandCopies: 1,
-        coverImagePath: 'assets/images/book_placeholder.png',
+        coverImagePath: null,
       ),
       Book(
         id: 83,
@@ -1157,7 +1168,7 @@ class DatabaseHelper {
         totalCopies: 4,
         availableCopies: 3,
         onHandCopies: 1,
-        coverImagePath: 'assets/images/book_placeholder.png',
+        coverImagePath: null,
       ),
       Book(
         id: 84,
@@ -1169,7 +1180,7 @@ class DatabaseHelper {
         totalCopies: 4,
         availableCopies: 3,
         onHandCopies: 1,
-        coverImagePath: 'assets/images/book_placeholder.png',
+        coverImagePath: null,
       ),
       Book(
         id: 85,
@@ -1181,7 +1192,7 @@ class DatabaseHelper {
         totalCopies: 3,
         availableCopies: 2,
         onHandCopies: 1,
-        coverImagePath: 'assets/images/book_placeholder.png',
+        coverImagePath: null,
       ),
       Book(
         id: 86,
@@ -1193,7 +1204,7 @@ class DatabaseHelper {
         totalCopies: 3,
         availableCopies: 2,
         onHandCopies: 1,
-        coverImagePath: 'assets/images/book_placeholder.png',
+        coverImagePath: null,
       ),
       // TB C - добавляем 4 книги (уже есть 6)
       Book(
@@ -1207,7 +1218,7 @@ class DatabaseHelper {
         totalCopies: 5,
         availableCopies: 4,
         onHandCopies: 1,
-        coverImagePath: 'assets/images/book_placeholder.png',
+        coverImagePath: null,
       ),
       Book(
         id: 88,
@@ -1220,7 +1231,7 @@ class DatabaseHelper {
         totalCopies: 4,
         availableCopies: 3,
         onHandCopies: 1,
-        coverImagePath: 'assets/images/book_placeholder.png',
+        coverImagePath: null,
       ),
       Book(
         id: 89,
@@ -1233,7 +1244,7 @@ class DatabaseHelper {
         totalCopies: 4,
         availableCopies: 3,
         onHandCopies: 1,
-        coverImagePath: 'assets/images/book_placeholder.png',
+        coverImagePath: null,
       ),
       Book(
         id: 90,
@@ -1246,10 +1257,13 @@ class DatabaseHelper {
         totalCopies: 3,
         availableCopies: 2,
         onHandCopies: 1,
-        coverImagePath: 'assets/images/book_placeholder.png',
+        coverImagePath: null,
       ),
     ];
     await _saveList('books', books, (b) => b.toMap());
+
+    // Initialize empty loans list
+    await _saveList('loans', <Loan>[], (l) => l.toMap());
 
     await _prefs!.setBool('db_initialized', true);
   }
@@ -1321,6 +1335,21 @@ class DatabaseHelper {
         book_id INTEGER NOT NULL,
         user_id TEXT NOT NULL,
         FOREIGN KEY (book_id) REFERENCES books (id)
+      )
+    ''');
+
+    // Loans table
+    await db.execute('''
+      CREATE TABLE loans (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        borrower_name TEXT NOT NULL,
+        book_id INTEGER NOT NULL,
+        quantity INTEGER NOT NULL DEFAULT 1,
+        issue_date TEXT NOT NULL,
+        return_date TEXT,
+        librarian_id INTEGER,
+        FOREIGN KEY (book_id) REFERENCES books (id),
+        FOREIGN KEY (librarian_id) REFERENCES users (id)
       )
     ''');
 
@@ -2210,5 +2239,208 @@ class DatabaseHelper {
       'rack': rack,
       'book': book,
     };
+  }
+
+  // Loan methods - запись выдачи книг
+  Future<int> recordLoan(Loan loan) async {
+    if (kIsWeb) {
+      final list = _getList('loans', (map) => Loan.fromMap(map));
+      final maxId = list.isEmpty ? 0 : (list.map((e) => e.id ?? 0).reduce((a, b) => (a ?? 0) > (b ?? 0) ? a : b) ?? 0);
+      final newLoan = Loan(
+        id: (maxId + 1),
+        borrowerName: loan.borrowerName,
+        bookId: loan.bookId,
+        quantity: loan.quantity,
+        issueDate: loan.issueDate,
+        returnDate: loan.returnDate,
+        librarianId: loan.librarianId,
+      );
+      list.add(newLoan);
+      await _saveList('loans', list, (l) => l.toMap());
+      
+      // Обновляем количество доступных и выданных книг
+      final book = await getBookById(loan.bookId);
+      if (book != null) {
+        await updateBook(book.copyWith(
+          availableCopies: book.availableCopies - loan.quantity,
+          onHandCopies: book.onHandCopies + loan.quantity,
+        ));
+      }
+      
+      return newLoan.id!;
+    }
+    final db = await database;
+    final loanId = await db.insert('loans', loan.toMap());
+    
+    // Обновляем количество доступных и выданных книг
+    final book = await getBookById(loan.bookId);
+    if (book != null) {
+      await updateBook(book.copyWith(
+        availableCopies: book.availableCopies - loan.quantity,
+        onHandCopies: book.onHandCopies + loan.quantity,
+      ));
+    }
+    
+    return loanId;
+  }
+
+  Future<List<Loan>> getAllLoans() async {
+    if (kIsWeb) {
+      return _getList('loans', (map) => Loan.fromMap(map));
+    }
+    final db = await database;
+    final maps = await db.query('loans', orderBy: 'issue_date DESC');
+    return maps.map((map) => Loan.fromMap(map)).toList();
+  }
+
+  Future<List<Loan>> getLoansByBorrower(String borrowerName) async {
+    if (kIsWeb) {
+      final allLoans = _getList('loans', (map) => Loan.fromMap(map));
+      return allLoans.where((loan) => loan.borrowerName == borrowerName).toList();
+    }
+    final db = await database;
+    final maps = await db.query(
+      'loans',
+      where: 'borrower_name = ?',
+      whereArgs: [borrowerName],
+      orderBy: 'issue_date DESC',
+    );
+    return maps.map((map) => Loan.fromMap(map)).toList();
+  }
+
+  Future<List<Loan>> getActiveLoans() async {
+    if (kIsWeb) {
+      final allLoans = _getList('loans', (map) => Loan.fromMap(map));
+      return allLoans.where((loan) => loan.returnDate == null).toList();
+    }
+    final db = await database;
+    final maps = await db.query(
+      'loans',
+      where: 'return_date IS NULL',
+      orderBy: 'issue_date DESC',
+    );
+    return maps.map((map) => Loan.fromMap(map)).toList();
+  }
+
+  Future<List<Loan>> getLoansByBook(int bookId) async {
+    if (kIsWeb) {
+      final allLoans = _getList('loans', (map) => Loan.fromMap(map));
+      return allLoans.where((loan) => loan.bookId == bookId).toList();
+    }
+    final db = await database;
+    final maps = await db.query(
+      'loans',
+      where: 'book_id = ?',
+      whereArgs: [bookId],
+      orderBy: 'issue_date DESC',
+    );
+    return maps.map((map) => Loan.fromMap(map)).toList();
+  }
+
+  Future<int> returnLoan(int loanId, int? returnedQuantity) async {
+    if (kIsWeb) {
+      final list = _getList('loans', (map) => Loan.fromMap(map));
+      final index = list.indexWhere((l) => l.id == loanId);
+      if (index == -1) return 0;
+      
+      final loan = list[index];
+      final quantityToReturn = returnedQuantity ?? loan.quantity;
+      final returnDate = DateTime.now();
+      
+      // Если возвращается не все количество, создаем новую запись для оставшегося количества
+      if (quantityToReturn < loan.quantity && loan.returnDate == null) {
+        final remainingLoan = loan.copyWith(
+          id: null,
+          quantity: loan.quantity - quantityToReturn,
+        );
+        final maxId = list.isEmpty ? 0 : (list.map((e) => e.id ?? 0).reduce((a, b) => (a ?? 0) > (b ?? 0) ? a : b) ?? 0);
+        list.add(remainingLoan.copyWith(id: maxId + 1));
+      }
+      
+      // Обновляем текущую запись
+      if (quantityToReturn == loan.quantity) {
+        list[index] = loan.copyWith(returnDate: returnDate);
+      } else {
+        list[index] = loan.copyWith(
+          quantity: quantityToReturn,
+          returnDate: returnDate,
+        );
+      }
+      
+      await _saveList('loans', list, (l) => l.toMap());
+      
+      // Обновляем количество доступных и выданных книг
+      final book = await getBookById(loan.bookId);
+      if (book != null) {
+        await updateBook(book.copyWith(
+          availableCopies: book.availableCopies + quantityToReturn,
+          onHandCopies: book.onHandCopies - quantityToReturn,
+        ));
+      }
+      
+      return 1;
+    }
+    final db = await database;
+    final loanMaps = await db.query('loans', where: 'id = ?', whereArgs: [loanId]);
+    if (loanMaps.isEmpty) return 0;
+    
+    final loan = Loan.fromMap(loanMaps.first);
+    final quantityToReturn = returnedQuantity ?? loan.quantity;
+    final returnDate = DateTime.now();
+    
+    // Если возвращается не все количество, создаем новую запись для оставшегося количества
+    if (quantityToReturn < loan.quantity && loan.returnDate == null) {
+      final remainingLoan = loan.copyWith(
+        id: null,
+        quantity: loan.quantity - quantityToReturn,
+      );
+      await db.insert('loans', remainingLoan.toMap());
+    }
+    
+    // Обновляем текущую запись
+    if (quantityToReturn == loan.quantity) {
+      await db.update(
+        'loans',
+        {'return_date': returnDate.toIso8601String()},
+        where: 'id = ?',
+        whereArgs: [loanId],
+      );
+    } else {
+      await db.update(
+        'loans',
+        {
+          'quantity': quantityToReturn,
+          'return_date': returnDate.toIso8601String(),
+        },
+        where: 'id = ?',
+        whereArgs: [loanId],
+      );
+    }
+    
+    // Обновляем количество доступных и выданных книг
+    final book = await getBookById(loan.bookId);
+    if (book != null) {
+      await updateBook(book.copyWith(
+        availableCopies: book.availableCopies + quantityToReturn,
+        onHandCopies: book.onHandCopies - quantityToReturn,
+      ));
+    }
+    
+    return 1;
+  }
+
+  Future<Loan?> getLoanById(int id) async {
+    if (kIsWeb) {
+      final list = _getList('loans', (map) => Loan.fromMap(map));
+      try {
+        return list.firstWhere((loan) => loan.id == id);
+      } catch (e) {
+        return null;
+      }
+    }
+    final db = await database;
+    final maps = await db.query('loans', where: 'id = ?', whereArgs: [id]);
+    if (maps.isEmpty) return null;
+    return Loan.fromMap(maps.first);
   }
 }

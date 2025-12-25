@@ -111,20 +111,23 @@ class _BookDetailScreenState extends State<BookDetailScreen> {
                           height: 500,
                           margin: padding,
                           decoration: BoxDecoration(
-                            color: Colors.grey.shade300,
                             borderRadius: BorderRadius.circular(12),
+                            boxShadow: [
+                              BoxShadow(
+                                color: Colors.black.withOpacity(0.2),
+                                spreadRadius: 2,
+                                blurRadius: 8,
+                                offset: const Offset(0, 4),
+                              ),
+                            ],
                           ),
                           child: ClipRRect(
                             borderRadius: BorderRadius.circular(12),
                             child: ImageHelper.buildBookCover(
                               imagePath: _book!.coverImagePath,
                               fit: BoxFit.cover,
-                              width: null,
+                              width: double.infinity,
                               height: 500,
-                              errorWidget: Container(
-                                color: Colors.blue.shade100,
-                                child: const Icon(Icons.book, size: 100, color: Colors.blue),
-                              ),
                             ),
                           ),
                         ),
@@ -145,14 +148,27 @@ class _BookDetailScreenState extends State<BookDetailScreen> {
                       // Cover image
                       Container(
                         width: double.infinity,
-                        height: 300,
-                        color: Colors.grey.shade300,
-                        child: ImageHelper.buildBookCover(
-                          imagePath: _book!.coverImagePath,
-                          fit: BoxFit.cover,
-                          width: null,
-                          height: 300,
-                          errorWidget: const Icon(Icons.book, size: 100),
+                        height: 400,
+                        margin: const EdgeInsets.only(bottom: 16),
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(12),
+                          boxShadow: [
+                            BoxShadow(
+                              color: Colors.black.withOpacity(0.2),
+                              spreadRadius: 2,
+                              blurRadius: 8,
+                              offset: const Offset(0, 4),
+                            ),
+                          ],
+                        ),
+                        child: ClipRRect(
+                          borderRadius: BorderRadius.circular(12),
+                          child: ImageHelper.buildBookCover(
+                            imagePath: _book!.coverImagePath,
+                            fit: BoxFit.cover,
+                            width: double.infinity,
+                            height: 400,
+                          ),
                         ),
                       ),
                       Padding(
